@@ -1,31 +1,32 @@
-# ▲ / next-forge
+## How to Run
 
-**Production-grade Turborepo template for Next.js apps.**
+### Prerequisites
 
-<div>
-  <img src="https://img.shields.io/npm/dy/next-forge" alt="" />
-  <img src="https://img.shields.io/npm/v/next-forge" alt="" />
-  <img src="https://img.shields.io/github/license/vercel/next-forge" alt="" />
-</div>
+- Node.js 18+ 
+- pnpm (recommended) or npm
 
-## Overview
+### Installation
 
-[next-forge](https://github.com/vercel/next-forge) is a [Next.js](https://nextjs.org/) project boilerplate for modern web application. It is designed to be a comprehensive starting point for new apps, providing a solid, opinionated foundation with a minimal amount of configuration.
-
-## Getting Started
-
-Clone the repo using:
-
-```sh
-npx next-forge@latest init
+```bash
+# Install dependencies
+pnpm install
 ```
 
-Then read the [docs](https://www.next-forge.com/docs) for more information.
+### Development
 
-## Contributors
+```bash
+# Start the development server
+cd apps/web && pnpm dev
+```
 
-<a href="https://github.com/vercel/next-forge/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=vercel/next-forge" />
-</a>
+The application will be available at:
+- **Home Page**: http://localhost:3001/
+- **Events Page**: http://localhost:3001/events
 
-Made with [contrib.rocks](https://contrib.rocks).
+## Path of the Page
+
+The main EventManager functionality is located at:
+- **Component**: `apps/web/app/components/EventManager.tsx`
+- **Page**: `apps/web/app/events/page.tsx`
+- **Home**: `apps/web/app/page.tsx`
+- **Layout**: `apps/web/app/layout.tsx`
